@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <!-- Css Link -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- fav icon -->
+    <link rel="shortcut icon" href="" type="image/x-icon" width="48" height="48">
+    <!-- CDN tablericons.com/ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+</head>
+
+<body>
+
+
+    <main>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <div>
+            <div class="scroll">
+                <section id="today">
+                    <div>
+                        <div>
+                            <a class="ham-icon" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M4 6l16 0" />
+                                    <path d="M4 12l16 0" />
+                                    <path d="M4 18l16 0" />
+                                </svg>
+                            </a>
+                            <h2>
+                                Today
+                            </h2>
+                            <span>4</span>
+                        </div>
+                        <div>
+                            <input id="inp-task" type="text" placeholder="Add New Task">
+                            <a id="new-task-normal" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M12 5l0 14" />
+                                    <path d="M5 12l14 0" />
+                                </svg>
+                            </a>
+                        </div>
+                        <!--Start Ul section TODAY -->
+                        <div>
+                            <ul id="tasks">
+                                <li>
+                                    <div>
+                                        <div>
+                                            <input type="checkbox" onclick="done(this)">
+                                            <a class="link" href="#">
+                                                <p>Research content ideas</p>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="M9 6l6 6l-6 6" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div>
+                                            <input type="checkbox" onclick="done(this)">
+                                            <a class="link" href="#">
+                                                <p>Create a database of guest</p>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="M9 6l6 6l-6 6" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div>
+                                            <input type="checkbox" onclick="done(this)">
+                                            <a class="link" href="#">
+                                                <p>Renew driver's license</p>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="M9 6l6 6l-6 6" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path
+                                                        d="M13 21h-7a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v6.5" />
+                                                    <path d="M16 3v4" />
+                                                    <path d="M8 3v4" />
+                                                    <path d="M4 11h16" />
+                                                    <path d="M22 22l-5 -5" />
+                                                    <path d="M17 22l5 -5" />
+                                                </svg>
+                                                <span>22-03-22</span>
+                                            </div>
+                                            <div>
+                                                <span>1</span>
+                                                <span>Subtasks</span>
+                                            </div>
+                                            <div>
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div>
+                                            <input type="checkbox" onclick="done(this)">
+                                            <a class="link" href="#">
+                                                <p>Consult accountant</p>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="M9 6l6 6l-6 6" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path
+                                                        d="M13 21h-7a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v6.5" />
+                                                    <path d="M16 3v4" />
+                                                    <path d="M8 3v4" />
+                                                    <path d="M4 11h16" />
+                                                    <path d="M22 22l-5 -5" />
+                                                    <path d="M17 22l5 -5" />
+                                                </svg>
+                                                <span>23-05-22</span>
+                                            </div>
+                                            <div>
+                                                <span>2</span>
+                                                <span>Subtaske</span>
+                                            </div>
+                                            <div>
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--End Ul section TODAY -->
+                    </div>
+                    <div>
+                        <button id="new-task-optional">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M12 5l0 14" />
+                                <path d="M5 12l14 0" />
+                            </svg>
+                        </button>
+                    </div>
+                </section>
+
+                <section id="menu">
+                    <div class="nav-menu">
+                        <span>Menu</span>
+                        <a class="close-menu" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M18 6l-12 12" />
+                                <path d="M6 6l12 12" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="search">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                                <path d="M21 21l-6 -6" />
+                            </svg>
+                        </span>
+                        <input type="search" placeholder="Search">
+                    </div>
+                    <div class="tasks">
+                        <h3>Tasks</h3>
+                        <ul>
+                            <li>
+                                <a href="#" id="upcomming-task">
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M7 7l5 5l-5 5" />
+                                            <path d="M13 7l5 5l-5 5" />
+                                        </svg>
+                                        <span>Upcomming</span>
+                                    </div>
+                                    <div>12</div>
+                                </a>
+                            </li>
+                            <li class="active">
+                                <a href="#" id="today-task">
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M3.5 5.5l1.5 1.5l2.5 -2.5" />
+                                            <path d="M3.5 11.5l1.5 1.5l2.5 -2.5" />
+                                            <path d="M3.5 17.5l1.5 1.5l2.5 -2.5" />
+                                            <path d="M11 6l9 0" />
+                                            <path d="M11 12l9 0" />
+                                            <path d="M11 18l9 0" />
+                                        </svg>
+                                        <span>Today</span>
+                                    </div>
+                                    <div>5</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" id="calendar-task">
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path
+                                                d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z" />
+                                            <path d="M16 3v4" />
+                                            <path d="M8 3v4" />
+                                            <path d="M4 11h16" />
+                                            <path d="M7 14h.013" />
+                                            <path d="M10.01 14h.005" />
+                                            <path d="M13.01 14h.005" />
+                                            <path d="M16.015 14h.005" />
+                                            <path d="M13.015 17h.005" />
+                                            <path d="M7.01 17h.005" />
+                                            <path d="M10.01 17h.005" />
+                                        </svg>
+                                        <span>Calendar</span>
+                                    </div>
+                                    <div class="d-none"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#7C7C7C"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path
+                                                d="M6 4h12a2 2 0 0 1 2 2v7h-5a2 2 0 0 0 -2 2v5h-7a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2z" />
+                                            <path
+                                                d="M20 13v.172a2 2 0 0 1 -.586 1.414l-4.828 4.828a2 2 0 0 1 -1.414 .586h-.172" />
+                                        </svg>
+                                        <span>Sticky Wall</span>
+                                    </div>
+                                    <div class="d-none"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="lists">
+                        <h3>Lists</h3>
+                        <ul>
+                            <li>
+                                <span></span>
+                                <a href="#">
+                                    <div>
+                                        <span>Personal</span>
+                                        <div>3</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <span></span>
+                                <a href="#">
+                                    <div>
+                                        <span>Work</span>
+                                        <div>6</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <span></span>
+                                <a href="#">
+                                    <div>
+                                        <span>Calendar</span>
+                                        <div>3</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M12 5l0 14" />
+                                    <path d="M5 12l14 0" />
+                                </svg>
+                                Add New List
+                            </a>
+                        </ul>
+
+                    </div>
+                    <div class="tags">
+                        <h2>Tags</h2>
+                        <ul>
+                            <li><a href="#">Tag 1</a></li>
+                            <li><a href="#">Tag 2</a></li>
+                            <li><a href="#">Tag 3</a></li>
+                            <li><a href="#">Tag 4</a></li>
+                            <li><a href="#">Tag 5</a></li>
+                            <li><a href="#">Tag 6</a></li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M12 5l0 14" />
+                                    <path d="M5 12l14 0" />
+                                </svg>
+                                Add Tag
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="settings">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M14 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                                <path d="M4 6l8 0" />
+                                <path d="M16 6l4 0" />
+                                <path d="M8 12m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                                <path d="M4 12l2 0" />
+                                <path d="M10 12l10 0" />
+                                <path d="M17 18m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                                <path d="M4 18l11 0" />
+                                <path d="M19 18l1 0" />
+                            </svg>
+                            Settings
+                        </a>
+                    </div>
+                    <div class="sign-out">
+                        <a href="#">Sign out</a>
+                    </div>
+                </section>
+
+                <section id="task-optional">
+                    <div class="nav-new-task">
+                        <span>Task:</span>
+                        <a class="close-menu" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M18 6l-12 12" />
+                                <path d="M6 6l12 12" />
+                            </svg>
+                        </a>
+                    </div>
+                    <form action="#">
+                        <div>
+                            <input id="inp-optional" type="text" placeholder="Add New Task">
+                            <textarea name="" id="" placeholder="Description"></textarea>
+                            <div>
+                                <div>
+                                    <span>List</span>
+                                    <select name="" id="list">
+                                        <option value="">Personal</option>
+                                        <option value="">Option1</option>
+                                        <option value="">Option2</option>
+                                        <option value="">Option3</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <span>Due date</span>
+                                    <select name="" id="date">
+                                        <option value="">22-03-22</option>
+                                        <option value="">Option1</option>
+                                        <option value="">Option2</option>
+                                        <option value="">Option3</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <span>Tags</span>
+                                    <ul>
+                                        <li><a href="#">Tag 1</a></li>
+                                        <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M12 5l0 14" />
+                                                <path d="M5 12l14 0" />
+                                            </svg>
+                                            Add Tag
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div>
+                                <h2>Subtask:</h2>
+                                <div>
+                                    <input type="text" placeholder="Add New Subtask">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M12 5l0 14" />
+                                            <path d="M5 12l14 0" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <div>
+                                                <input type="checkbox" name="" id="">
+                                                <a href="#">
+                                                    <p>Subtask 1</p>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path d="M9 6l6 6l-6 6" />
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <button id="del-btn">Delete Task</button>
+                            <button id="save-btn">Save Changes</button>
+                        </div>
+                    </form>
+                </section>
+
+                <section id="Upcomming">
+                    <div>
+                        <div>
+                            <a class="ham-icon" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M4 6l16 0" />
+                                    <path d="M4 12l16 0" />
+                                    <path d="M4 18l16 0" />
+                                </svg>
+                            </a>
+                            <h2>
+                                Upcomming
+                            </h2>
+                            <span>12</span>
+                        </div>
+
+                        <!--Start Ul section TODAY -->
+                        <div>
+                            <span>Today</span>
+                            <div>
+                                <input id="inp-task-today" type="text" placeholder="Add New Task">
+                                <a id="new-task-normal-today" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="M12 5l0 14" />
+                                        <path d="M5 12l14 0" />
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <ul id="today-tasks">
+                                <li>
+                                    <div>
+                                        <div>
+                                            <input type="checkbox" onclick="done(this)">
+                                            <a class="link" href="#">
+                                                <p>Research content ideas</p>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="M9 6l6 6l-6 6" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div>
+                                            <input type="checkbox" onclick="done(this)">
+                                            <a class="link" href="#">
+                                                <p>Create a database of guest</p>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="M9 6l6 6l-6 6" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div>
+                                            <input type="checkbox" onclick="done(this)">
+                                            <a class="link" href="#">
+                                                <p>Renew driver's license</p>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="M9 6l6 6l-6 6" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div>
+                                            <input type="checkbox" onclick="done(this)">
+                                            <a class="link" href="#">
+                                                <p>Consult accountant</p>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="M9 6l6 6l-6 6" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--End Ul section TODAY -->
+
+                        <!--Start Ul section Tomorrow -->
+                        <div>
+                            <span>Tomorrow</span>
+                            <div>
+                                <input id="inp-task-tomorrow" type="text" placeholder="Add New Task">
+                                <a id="new-task-normal-tomorrow" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="M12 5l0 14" />
+                                        <path d="M5 12l14 0" />
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <ul id="tomorrow-tasks">
+                                <li>
+                                    <div>
+                                        <div>
+                                            <input type="checkbox" onclick="done(this)">
+                                            <a class="link" href="#">
+                                                <p>Research Ui</p>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="M9 6l6 6l-6 6" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div>
+                                            <input type="checkbox" onclick="done(this)">
+                                            <a class="link" href="#">
+                                                <p>Create a Website with Tailwind</p>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="M9 6l6 6l-6 6" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div>
+                                            <input type="checkbox" onclick="done(this)">
+                                            <a class="link" href="#">
+                                                <p>GYM</p>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="M9 6l6 6l-6 6" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div>
+                                            <input type="checkbox" onclick="done(this)">
+                                            <a class="link" href="#">
+                                                <p>Reading Book 10 Pages</p>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="M9 6l6 6l-6 6" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--End Ul section Tomorrow -->
+
+                        <!--Start Ul section This Week -->
+                        <div>
+                            <span>This Week</span>
+                            <div>
+                                <input id="inp-task-week" type="text" placeholder="Add New Task">
+                                <a id="new-task-normal-week" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="M12 5l0 14" />
+                                        <path d="M5 12l14 0" />
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <ul id="Week-tasks">
+                                <li>
+                                    <div>
+                                        <div>
+                                            <input type="checkbox" onclick="done(this)">
+                                            <a class="link" href="#">
+                                                <p>Studying About JS</p>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="M9 6l6 6l-6 6" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div>
+                                            <input type="checkbox" onclick="done(this)">
+                                            <a class="link" href="#">
+                                                <p>Research About Project UI</p>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="M9 6l6 6l-6 6" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div>
+                                            <input type="checkbox" onclick="done(this)">
+                                            <a class="link" href="#">
+                                                <p>GYM</p>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="M9 6l6 6l-6 6" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div>
+                                            <input type="checkbox" onclick="done(this)">
+                                            <a class="link" href="#">
+                                                <p>Finished the book</p>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="M9 6l6 6l-6 6" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--End Ul section This Week -->
+                    </div>
+                </section>
+
+                <section id="calendar">
+                    <div>
+                        <div>
+                            <a class="ham-icon" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M4 6l16 0" />
+                                    <path d="M4 12l16 0" />
+                                    <path d="M4 18l16 0" />
+                                </svg>
+                            </a>
+                            <div>
+                                <span>
+                                    14 February
+                                </span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="M12 5l0 14" />
+                                        <path d="M5 12l14 0" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="links">
+                            <a class="calendar-link-day" onclick="showWrapperDay()">Day</a>
+                            <a class="calendar-link-week" onclick="showWrapperWeek()">Week</a>
+                            <a class="calendar-link-month">Month</a>
+                        </div>
+                        <div>
+                            <div class="active-calendar">
+                                <span>MON</span>
+                                <span>14</span>
+                            </div>
+                            <div>
+                                <span>TUE</span>
+                                <span>15</span>
+                            </div>
+                            <div>
+                                <span>WED</span>
+                                <span>16</span>
+                            </div>
+                            <div>
+                                <span>THU</span>
+                                <span>17</span>
+                            </div>
+                            <div>
+                                <span>FRI</span>
+                                <span>18</span>
+                            </div>
+                            <div>
+                                <span>SAT</span>
+                                <span>19</span>
+                            </div>
+                            <div>
+                                <span>SUN</span>
+                                <span>20</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div id="calendar-day-wrapper">
+                                <div>
+                                    <div>
+                                        <span>09:00</span>
+                                        <span>AM</span>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <p>Session 1: Marketing Sprint</p>
+                                            <div>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <span>09:00</span>
+                                        <span>AM</span>
+                                    </div>
+                                    <div>
+                                        <p>Sale Catchup</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <span>10:00</span>
+                                        <span>AM</span>
+                                    </div>
+                                    <div>
+                                        <p></p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <span>11:00</span>
+                                        <span>AM</span>
+                                    </div>
+                                    <div>
+                                        <p></p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <span>12:00</span>
+                                        <span>PM</span>
+                                    </div>
+                                    <div>
+                                        <p>Renew driver's licence</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="calendar-week-wrapper">
+                                <div>
+                                    <div>
+                                        <p title="Session 1: Marketing Sprint">Se..</p>
+                                    </div>
+                                    <div>
+                                        <p title="Sale Catchup">Sa..</p>
+                                    </div>
+                                    <div></div>
+                                    <div></div>
+                                    <div>
+                                        <p title="Renew driver's licence">Re..</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <p title="Session 1: Marketing Sprint">Se..</p>
+                                    </div>
+                                    <div>
+                                        <p title="Sale Catchup">Sa..</p>
+                                    </div>
+                                    <div></div>
+                                    <div></div>
+                                    <div>
+                                        <p title="Renew driver's licence">Re..</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <p title="Session 1: Marketing Sprint">Se..</p>
+                                    </div>
+                                    <div>
+                                        <p title="Sale Catchup">Sa..</p>
+                                    </div>
+                                    <div></div>
+                                    <div></div>
+                                    <div>
+                                        <p title="Renew driver's licence">Re..</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <p title="Session 1: Marketing Sprint">Se..</p>
+                                    </div>
+                                    <div>
+                                        <p title="Sale Catchup">Sa..</p>
+                                    </div>
+                                    <div></div>
+                                    <div></div>
+                                    <div>
+                                        <p title="Renew driver's licence">Re..</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <p title="Session 1: Marketing Sprint">Se..</p>
+                                    </div>
+                                    <div>
+                                        <p title="Sale Catchup">Sa..</p>
+                                    </div>
+                                    <div></div>
+                                    <div></div>
+                                    <div>
+                                        <p title="Renew driver's licence">Re..</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <p title="Session 1: Marketing Sprint">Se..</p>
+                                    </div>
+                                    <div>
+                                        <p title="Sale Catchup">Sa..</p>
+                                    </div>
+                                    <div></div>
+                                    <div></div>
+                                    <div>
+                                        <p title="Renew driver's licence">Re..</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <p title="Session 1: Marketing Sprint">Se..</p>
+                                    </div>
+                                    <div>
+                                        <p title="Sale Catchup">Sa..</p>
+                                    </div>
+                                    <div></div>
+                                    <div></div>
+                                    <div>
+                                        <p title="Renew driver's licence">Re..</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
